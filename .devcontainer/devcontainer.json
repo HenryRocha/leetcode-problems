@@ -1,27 +1,20 @@
 {
   "name": "Personal development container",
   "runArgs": [],
-  "build": {
-    "dockerfile": "Dockerfile",
-    "target": "dev"
-  },
-
-  // Use 'settings' to set *default* container specific settings.json values on container create.
-  // You can edit these settings after create using File > Preferences > Settings > Remote.
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-
-  // Use 'appPort' to create a container with published ports. If the port isn't working, be sure
-  // your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
-  // "appPort": [],
-
-  // Uncomment the next line to run commands after the container is created.
-  // "postCreateCommand": "gcc -v",
-
-  // Comment out the next line if you want to run as root instead
+  "image": "henryrocha/rust-python-dev-container:v0.1",
   "remoteUser": "henryrocha",
-
   // Add the IDs of extensions you want installed when the container is created in the array below.
-  "extensions": []
+  "extensions": [
+    "rust-lang.rust-analyzer",
+    "serayuzgur.crates",
+    "bungcip.better-toml",
+    "ms-python.python",
+    "visualstudioexptteam.vscodeintellicode",
+    "kevinrose.vsc-python-indent",
+    "njpwerner.autodocstring",
+    "donjayamanne.python-environment-manager",
+    "eamodio.gitlens",
+    "dracula-theme.theme-dracula",
+    "pkief.material-icon-theme"
+  ]
 }
