@@ -1,0 +1,5 @@
+set positional-arguments
+
+alias ct-lc := cargo-test-leetcode
+@cargo-test-leetcode cargo-test-leetcode:
+    cargo test --example leetcode_$1
