@@ -1,5 +1,5 @@
 set positional-arguments
 
 alias tl := test-leetcode
-@test-leetcode test-leetcode:
-    cargo test --example leetcode_$1
+@test-leetcode problem_number test_filter="":
+    cargo test --example leetcode_{{problem_number}} {{test_filter}}
