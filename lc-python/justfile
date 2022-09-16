@@ -4,5 +4,9 @@ test:
     poetry run pytest
 
 alias ti := test-interview
-@test-interview test-interview:
-    poetry run pytest tests/codint/interviews/$1
+@test-interview interview_num test_filter="":
+    poetry run pytest tests/codint/interviews/{{interview_num}} -k "{{test_filter}}"
+
+alias tm := test-mandatory
+@test-mandatory mandatory_name test_filter="":
+    poetry run pytest tests/codint/mandatory/{{mandatory_name}} -k "{{test_filter}}"
