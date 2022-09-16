@@ -7,9 +7,9 @@ Personal repository used for solving and testing LeetCode problems.
 If you have [just](https://github.com/casey/just) installed you can simply run:
 
 ```bash
-just ct-lc 0001 # 0001 is the problem number
+just tl 0001 # 0001 is the problem number
 # or
-just cargo-test-leetcode 0001 # 0001 is the problem number
+just test-leetcode 0001 # 0001 is the problem number
 ```
 
 Otherwise, run:
