@@ -1,0 +1,8 @@
+set positional-arguments
+
+test:
+    poetry run pytest
+
+alias ti := test-interview
+@test-interview test-interview:
+    poetry run pytest tests/codint/interviews/$1
