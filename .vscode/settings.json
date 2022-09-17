@@ -3,5 +3,10 @@
     "files.exclude": {
         "**/*__pycache__": true,
         "**/*.pytest_cache": true
-    }
+    },
+    "python.testing.pytestArgs": [
+        "lc-python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
