@@ -76,26 +76,78 @@ def pre_order_iterative(root: TreeNode) -> None:
 
 
 def in_order_recursive(root: TreeNode) -> None:
-    pass
+    if root == None:
+        return
+
+    in_order_recursive(root.left)
+    print(root.value)
+    in_order_recursive(root.right)
 
 
 def post_order_recursive(root: TreeNode) -> None:
-    pass
+    if root == None:
+        return
+
+    post_order_recursive(root.left)
+    post_order_recursive(root.right)
+    print(root.value)
 
 
 def breadth_first(root: TreeNode) -> None:
-    pass
+    queue = [root]
+
+    while len(queue) > 0:
+        current = queue.pop(0)
+        print(current.value)
+
+        if current.left is not None:
+            queue.append(current.left)
+
+        if current.right is not None:
+            queue.append(current.right)
 
 
 def graph_depth_first_recursive(node: GraphNode, visited=None) -> None:
     if visited is None:
         visited = set()
-    # Your code goes here
+
+    if node in visited:
+        return
+
+    print(node.value)
+    visited.add(node)
+
+    for adjacent in node.adjacent:
+        graph_depth_first_recursive(adjacent, visited)
 
 
 def graph_depth_first_iterative(node: GraphNode) -> None:
-    pass
+    stack = [node]
+    visited = set()
+
+    while len(stack) > 0:
+        current_node = stack.pop()
+        if current_node in visited:
+            continue
+
+        print(current_node.value)
+        visited.add(current_node)
+
+        for adjacent in current_node.adjacent:
+            stack.append(adjacent)
 
 
 def graph_breadth_first(node: GraphNode) -> None:
-    pass
+    queue = [node]
+    visited = set()
+
+    while len(queue) > 0:
+        current_node = queue.pop(0)
+        if current_node in visited:
+            continue
+
+        print(current_node.value)
+        visited.add(current_node)
+
+        for adjacent in current_node.adjacent:
+            queue.append(adjacent)
