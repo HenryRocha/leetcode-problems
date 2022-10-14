@@ -3,7 +3,7 @@ from contextlib import contextmanager
 from functools import wraps
 from io import StringIO
 
-from lc_python.codint.mandatory.search import solution
+from lc_python.codint.mandatory.search_algorithms import solution
 
 # SETUP
 
