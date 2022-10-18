@@ -5,8 +5,12 @@
         "**/*.pytest_cache": true
     },
     "python.testing.pytestArgs": [
-        "lc-python"
+        "python"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "/home/fed/repos/leetcode-problems/python/"
+    ],
+    "python.analysis.typeCheckingMode": "strict"
 }
