@@ -2,7 +2,7 @@ from typing import Callable
 
 import pytest
 from _pytest.fixtures import SubRequest
-from lc_python.codint.interviews.interview_07.solution_01 import place_queens as place_queens_s1
+from src.coding_interviews.interviews.interview_07.solution_01 import place_queens as place_queens_s1
 
 PlaceQueensFuncType = Callable[[int], list[list[int]]]
 

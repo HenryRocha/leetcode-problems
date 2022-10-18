@@ -2,7 +2,7 @@ from typing import Callable
 
 import pytest
 from _pytest.fixtures import SubRequest
-from lc_python.codint.interviews.interview_08.solution_01 import compute_pond_sizes as compute_pond_sizes_s1
+from src.coding_interviews.interviews.interview_08.solution_01 import compute_pond_sizes as compute_pond_sizes_s1
 
 ComputePondSizesFuncType = Callable[[list[list[int]]], list[int]]
 

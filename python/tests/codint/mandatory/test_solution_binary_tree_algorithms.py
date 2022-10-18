@@ -1,7 +1,7 @@
 from typing import List, Union
 
 import pytest
-from lc_python.codint.mandatory.binary_tree_algorithms.solution import Solution, TreeNode
+from src.coding_interviews.mandatory.binary_tree_algorithms.solution import Solution, TreeNode
 
 
 @pytest.mark.parametrize(

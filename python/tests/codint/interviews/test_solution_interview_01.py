@@ -1,8 +1,8 @@
 from typing import Callable
 
 import pytest
-from lc_python.codint.interviews.interview_01.solution_01 import one_edit_away as one_edit_away_s1
-from lc_python.codint.interviews.interview_01.solution_02 import one_edit_away as one_edit_away_s2
+from src.coding_interviews.interviews.interview_01.solution_01 import one_edit_away as one_edit_away_s1
+from src.coding_interviews.interviews.interview_01.solution_02 import one_edit_away as one_edit_away_s2
 
 
 @pytest.fixture(params=[one_edit_away_s1, one_edit_away_s2])

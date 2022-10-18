@@ -1,7 +1,7 @@
 from itertools import combinations
 
 import pytest
-from lc_python.codint.coding_practice.n0001_two_sum import Solution
+from src.coding_interviews.coding_practice.n0001_two_sum import Solution
 
 l = [19, -50, 31, -10, 15, 23]
 

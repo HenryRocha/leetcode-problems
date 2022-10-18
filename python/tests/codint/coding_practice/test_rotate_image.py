@@ -1,5 +1,5 @@
 import pytest
-from lc_python.codint.coding_practice.n0048_rotate_image import SOLUTIONS
+from src.coding_interviews.coding_practice.n0048_rotate_image import SOLUTIONS
 
 
 @pytest.fixture(params=SOLUTIONS)

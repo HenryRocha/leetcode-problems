@@ -1,5 +1,5 @@
 import pytest
-from lc_python.codint.coding_practice.n0042_trapping_rain_water import SOLUTIONS
+from src.coding_interviews.coding_practice.n0042_trapping_rain_water import SOLUTIONS
 
 
 @pytest.fixture(params=SOLUTIONS)

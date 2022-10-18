@@ -1,8 +1,8 @@
 from typing import Callable
 
 import pytest
-from lc_python.codint.interviews.interview_02.solution_01 import nth_to_last as nth_to_last_s1
-from lc_python.codint.interviews.interview_02.solution_02 import nth_to_last as nth_to_last_s2
+from src.coding_interviews.interviews.interview_02.solution_01 import nth_to_last as nth_to_last_s1
+from src.coding_interviews.interviews.interview_02.solution_02 import nth_to_last as nth_to_last_s2
 
 
 @pytest.fixture(params=[nth_to_last_s1, nth_to_last_s2])

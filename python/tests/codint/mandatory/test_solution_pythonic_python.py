@@ -8,7 +8,7 @@ from contextlib import contextmanager
 from io import StringIO
 from typing import Any, Callable
 
-from lc_python.codint.mandatory.pythonic_python import solution
+from src.coding_interviews.mandatory.pythonic_python import solution
 
 
 ################################################################################

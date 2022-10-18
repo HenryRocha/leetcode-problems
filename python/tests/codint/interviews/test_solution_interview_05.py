@@ -1,7 +1,7 @@
 from typing import Callable
 
 import pytest
-from lc_python.codint.interviews.interview_05.solution_01 import swap_odd_even_bits as swap_odd_even_bits_s1
+from src.coding_interviews.interviews.interview_05.solution_01 import swap_odd_even_bits as swap_odd_even_bits_s1
 
 
 @pytest.fixture(params=[swap_odd_even_bits_s1])

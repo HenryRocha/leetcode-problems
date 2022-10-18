@@ -1,8 +1,8 @@
 from typing import Callable
 
 import pytest
-from lc_python.codint.interviews.interview_03.solution_01 import Stack
-from lc_python.codint.interviews.interview_03.solution_01 import sort_stack as sort_stack_s1
+from src.coding_interviews.interviews.interview_03.solution_01 import Stack
+from src.coding_interviews.interviews.interview_03.solution_01 import sort_stack as sort_stack_s1
 
 
 @pytest.fixture(params=[sort_stack_s1])
